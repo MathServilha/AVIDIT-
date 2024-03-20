@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 228, in script
+    menu:
+ScriptError: could not find label 'municao'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 660, in main
+    run(restart)
+  File "renpy/main.py", line 146, in run
+    renpy.execution.run_context(True)
+  File "renpy/execution.py", line 938, in run_context
+    context.run()
+  File "game/script.rpy", line 228, in script
+    menu:
+  File "renpy/script.py", line 927, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'municao'.
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 7.5.3.22090809
+ 1.0
+Sun Jun 11 20:23:49 2023

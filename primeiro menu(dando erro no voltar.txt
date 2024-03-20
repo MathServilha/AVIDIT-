@@ -1,0 +1,26 @@
+#hover e idle dos capitulos
+init python:
+    if(persistent.capitulo1 == None):
+        persistent.captulo1 = True
+    #if(persistent.voltar == None):
+    #    persistent.voltar = False
+
+    if(persistent.teste1 == None):
+        persistent.teste1 = False
+
+
+
+#os capitulos depois do botão iniciar
+screen capitulos:
+    tag menu
+    use navigation
+    add "images/background_prancheta_caps.png"
+    imagemap:
+        ground "images/Capitulos_idle.png"
+        hover "images/Capitulos_hover.png"
+
+        align (0.08, 0.4) #alinhamento da imagem hover e idle
+
+        hotspot(47,220,280,78) action Jump("capitulo1")
+
+        hotspot(102,407,185,57) action MainMenu("Voltar")

@@ -1,0 +1,20 @@
+##fica no inicio do codigo do menu
+
+screen conceitos:
+    add "gui/deserto_background.png"
+    tag menu
+    hbox:
+        xalign 0.02
+        yalign 0.2
+        spacing 20
+        text "{size=+4}HBOX{/size}"
+        textbutton _("Iniciar") action Start()
+        textbutton _("Load") action ShowMenu("load")
+
+    vbox: #caixa vertical
+        xalign 0.5
+        yalign 0.1
+        spacing 20
+        text "{size=+4}VBOX{/size}"
+        textbutton _("Salve") action ShowMenu("save")
+        textbutton _("Preferencias") action ShowMenu("preference")

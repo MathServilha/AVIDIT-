@@ -1,0 +1,13 @@
+linha 139 - SCREEN
+init python:
+    style.say_who_window.background = ("gui/prancheta1.png")
+    style.say_who_window.left_padding = 20
+    style.say_who_window.top_padding = 10
+    style.say_who_window.bottom_padding = 0
+    style.say_who_window.xpos = 20 #Posição da Caixa
+    style.say_who_window.ypos = 20 #Posição da Caixa
+
+    style.window.background = "gui/prancheta1.png"
+    style.window.left_padding = 32
+    style.window.right_padding = 45
+    style.window.top_padding = 20
